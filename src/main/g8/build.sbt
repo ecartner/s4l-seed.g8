@@ -1,8 +1,17 @@
-// give the user a nice default project!
-ThisBuild / organization := "com.example"
-ThisBuild / scalaVersion := "2.12.8"
+name := "$name$"
 
-lazy val root = (project in file(".")).
-  settings(
-    name := "ECC Scala Seed"
-  )
+version := "0.1-SNAPSHOT"
+
+scalaVersion := "2.13.0"
+
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test",
+  "org.scalacheck" %% "scalacheck" % "1.14.0" % "test",
+  "org.slf4j" % "slf4j-api" % "1.7.25",
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+)
+
+javacOptions += "-Xlint:deprecation"
+
+scalacOptions += "-deprecation"
+
