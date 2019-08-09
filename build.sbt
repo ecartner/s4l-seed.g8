@@ -4,7 +4,7 @@
 lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
-    name := "ECC Scala Seed",
+    name := "S4L Scala Seed",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
