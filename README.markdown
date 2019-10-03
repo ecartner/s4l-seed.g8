@@ -1,5 +1,11 @@
 A [Giter8][g8] template for a simple Scala project with support for ScalaTest, ScalaCheck, SLF4J and Logback
 
+Usage
+-----
+
+    > sbt new ecartner/s4l-seed.g8
+
+
 Template license
 ----------------
 Written in 2019 by Eric Cartner 
