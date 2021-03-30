@@ -1,12 +1,13 @@
 package $package$
 
-import org.scalacheck.Gen
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.scalacheck.ScalaCheckDrivenPropertyChecks
+import org.scalatest._
+import flatspec.AnyFlatSpec
+import matchers.should._
+import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
 
-class StubSpec extends FlatSpec
+class StubSpec extends AnyFlatSpec
   with Matchers
-  with ScalaCheckDrivenPropertyChecks {
+  with ScalaCheckPropertyChecks {
 
   "foo" should "return 7 times n" in {
     forAll { i: Int =>
