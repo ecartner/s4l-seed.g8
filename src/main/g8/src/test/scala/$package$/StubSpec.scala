@@ -10,7 +10,7 @@ class StubSpec extends AnyFlatSpec
   with ScalaCheckPropertyChecks {
 
   "foo" should "return 7 times n" in {
-    forAll { i: Int =>
+    forAll { (i: Int) =>
       val s = Stub(i)
       s.foo shouldBe (7 * i)
     }
