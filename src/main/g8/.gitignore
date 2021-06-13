@@ -1,18 +1,43 @@
-# Standard SBT ignore
+# bloop and metals
+.bloop
+.bsp
+.metals
+project/metals.sbt
 
-dist/*
+# vs code
+.vscode
+
+# scala 3
+.tasty
+
+# sbt
+project/project/
+project/target/
 target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+
+# eclipse
+build/
+.classpath
+.project
+.settings
+.worksheet
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+# mac
+.DS_Store
+
+# other?
+bin/
 .history
+.scala_dependencies
 .cache
-.lib/
-.bsp/
+.cache-main
 
-# IntelliJ
-.idea/
-
-# Vim
-*.swp
+#general
+*.class
