@@ -1,3 +1,15 @@
+# bloop and metals
+.bloop
+.bsp
+.metals
+project/metals.sbt
+
+# vs code
+.vscode
+
+# sbt
+project/project/
+project/target/
 target/
 boot/
 lib_managed/
