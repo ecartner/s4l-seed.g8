@@ -1,7 +1,7 @@
 val slf4j = "org.slf4j" % "slf4j-api" % "1.7.36"
 val logback = "ch.qos.logback" % "logback-classic" % "1.2.11"
-val scalatest = "org.scalatest" %% "scalatest" % "3.2.11" % "test"
-val scalatestplus = "org.scalatestplus" %% "scalacheck-1-15" % "3.2.11.0" % "test"
+val scalatest = "org.scalatest" %% "scalatest" % "3.2.12" % "test"
+val scalatestplus = "org.scalatestplus" %% "scalacheck-1-16" % "3.2.12.0" % "test"
 
 ThisBuild / scalaVersion := "3.1.2"
 ThisBuild / version := "0.1-SNAPSHOT"
