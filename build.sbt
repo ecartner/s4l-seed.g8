@@ -5,7 +5,7 @@ lazy val root = (project in file("."))
   .enablePlugins(ScriptedPlugin)
   .settings(
     name := "S4L Scala Seed",
-    test in Test := {
+    Test / test := {
       val _ = (g8Test in Test).toTask("").value
     },
     scriptedLaunchOpts ++= List("-Xms1024m", "-Xmx1024m", "-XX:ReservedCodeCacheSize=128m", "-Xss2m", "-Dfile.encoding=UTF-8"),
