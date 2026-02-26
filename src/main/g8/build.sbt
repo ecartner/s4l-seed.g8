@@ -3,7 +3,7 @@ val logback = "ch.qos.logback" % "logback-classic" % "1.5.32"
 val scalatest = "org.scalatest" %% "scalatest" % "3.2.19" % "test"
 val scalatestplus = "org.scalatestplus" %% "scalacheck-1-19" % "3.2.19.0" % "test"
 
-ThisBuild / scalaVersion := "3.3.1"
+ThisBuild / scalaVersion := "3.8.2"
 ThisBuild / version := "0.1-SNAPSHOT"
 ThisBuild / javacOptions += "-Xlint:deprecation"
 ThisBuild / scalacOptions += "-deprecation"
